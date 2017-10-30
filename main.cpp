@@ -1,6 +1,7 @@
 #include <cstdlib>
 #include <valarray>
 #include<iostream>
+#include<climits>
 
 using namespace std;
 
@@ -28,7 +29,6 @@ public:
 
 bool Stack::isEmpty(){
     if (a == NULL) {
-        
         return true;
     }else {
         return false;
@@ -80,7 +80,11 @@ int Stack::pop(){
 }
 
 int Stack::min(){
-    return peek_min();
+    if (isEmpty()){
+        return INT_MIN;
+    }else{
+        return peek_min();
+    }
 }
 
 int main(int argc, char** argv) {

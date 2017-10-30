@@ -43,11 +43,16 @@ A implementação foi feita em C++:
 
 Porque tudo roda em O(1)?
 
-pop(): T(n) = 1 + 1 + 3 + 1 = 6
+pop(): T(n) = 1 + 1 + 3 + 1 = 6.
+
        T(n)<c.1, para todo c>=6 e n>0 logo T(n) é O(1).
-push():T(n) = 4 (pois possui if, else) + 1 + 1 + 1 + 1 = 8
+       
+push():T(n) = 4 (pois possui if, else) + 1 + 1 + 1 + 1 = 8.
+
        T(n)<c.1, para todo c>=8 e n>0, logo T(n) é O(1).
+       
 min():T(n) = 1;
+
       T(n)<c.1, para todo c>=1 e n>0, logo T(n) é O(1).
 
 Obviamente, com essa modificação, a estrutura total terá sempre 2n espaços de memória.
